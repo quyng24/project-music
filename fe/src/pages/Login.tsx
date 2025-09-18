@@ -9,7 +9,7 @@ export default function Login() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = (e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
     authProvider.signin(email, password, (user, error) => {
       if (user) {
