@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    // Cho phép import .ts
+    "allowImportingTsExtensions": true,
+
+    // Không sinh file .js
+    "noEmit": true,
+    // Nếu muốn sinh .d.ts thì dùng cái này thay vì noEmit
+    // "emitDeclarationOnly": true,
+    // "declaration": true,
+    // "declarationMap": true,
+
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

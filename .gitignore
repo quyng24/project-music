@@ -1,0 +1,20 @@
+# Thư mục node_modules
+be/node_modules/
+fe/node_modules/
+# File môi trường (chứa biến nhạy cảm)
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tệp hệ thống
+.DS_Store
+Thumbs.db
+
+# Thư mục upload ảnh (nếu ảnh không cần push lên git)
+uploads/
+
+# VSCode settings (nếu dùng)
+.vscode/
