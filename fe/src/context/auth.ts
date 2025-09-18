@@ -1,8 +1,5 @@
 import { callApiLogin, callApiLogout, callApiToken } from "../api/apiAuthen";
-
-interface User {
-  role: string;
-}
+import { User } from "../types/user";
 
 interface LoginCallback {
   (userData: any | null, errorMessage?: string): void;

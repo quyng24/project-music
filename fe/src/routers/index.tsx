@@ -5,7 +5,7 @@ const Login = lazy(() => import("../pages/Login"));
 const AdminDashboard = lazy(() => import("../pages/admin/AdminDashboard"));
 const UserDashboard = lazy(() => import("../pages/user/UserDashboard"));
 
-export const routes = (roleName) => [
+export const routes = (roleName: string) => [
   { path: "/login", element: <Login /> },
   {
     path: "/admin",

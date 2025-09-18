@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { authProvider } from "../context/auth";
+import { authProvider } from "../../context/auth";
 import { Button, Col, Row } from "antd";
 
 export default function Header() {
-    const [roleName, setRoleName] = useState(null);
+    const [roleName, setRoleName] = useState<string | undefined>('');
     const navigate = useNavigate();
     useEffect(() => {
         const checkRole = async () => {
